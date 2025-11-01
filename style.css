@@ -1,0 +1,73 @@
+/* General Styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Hero Section */
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') center/cover no-repeat;
+}
+
+.animate-fade {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Trainer Cards */
+
+.trainer-card {
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.trainer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 12px black
+}
+
+
+/* Service Boxes */
+
+.service-box {
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 8px black;
+}
+
+
+/* Navbar active effect */
+
+.nav-link:hover {
+    color: rgb(214, 139, 0) !important;
+    transition: 0.3s;
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
